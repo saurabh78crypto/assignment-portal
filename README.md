@@ -23,7 +23,7 @@ The Assignment Submission Portal is a backend system where users can upload assi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/assignment-portal.git
+git clone https://github.com/saurabh78crypto/assignment-portal.git
 cd assignment-portal
 ```
 2. Install dependencies
@@ -31,7 +31,7 @@ cd assignment-portal
 npm install
 ```
 3. Create a .env file and add the following:
-``env
+```env
 MONGO_URI=<your-mongodb-connection-string>
 JWT_SECRET=<your-secret-key>
 PORT=5000
