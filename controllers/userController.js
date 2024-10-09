@@ -1,5 +1,6 @@
 import User from '../models/userModel.js';
 import Assignment from '../models/assignmentModel.js';
+import Admin from '../models/adminModel.js';
 import asyncHandler from 'express-async-handler';
 import jwt from 'jsonwebtoken';
 
@@ -53,4 +54,10 @@ const uploadAssignment = asyncHandler(async (req, res) => {
     res.status(201).json(assignment);
 });
 
-export { registerUser, loginUser, uploadAssignment };
+// Fetch all admins
+const getAllAdmins = asyncHandler(async (req, res) => {
+    const admins = await Admin.find({});
+    res.json(admins);
+})
+
+export { registerUser, loginUser, uploadAssignment, getAllAdmins };
