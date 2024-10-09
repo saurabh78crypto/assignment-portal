@@ -35,7 +35,7 @@ npm install
 MONGO_URI=<your-mongodb-connection-string>
 JWT_SECRET=<your-secret-key>
 PORT=5000
-
+```
 4. Start the server
 ```bash
 npm start
